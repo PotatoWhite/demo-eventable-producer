@@ -1,0 +1,108 @@
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "account": "test1@example.com",
+  "name": "홍길동",
+  "mobile": 1234,
+  "addresses": [
+    {
+      "type": "Home",
+      "zipcode": "1234"
+    }
+  ]
+}
+
+###
+PATCH http://localhost:8080/users/1
+Content-Type: application/json
+
+{
+  "name": "potatoㅁㄹa",
+  "mobile": 3232,
+  "addresses": [
+    {
+      "type": "Home",
+      "zipcode": "1234ㅇ"
+    }
+  ]
+}
+
+<> 2021-01-12T015231.200.json
+<> 2021-01-12T012523.200.json
+<> 2021-01-11T230118.200.json
+<> 2021-01-11T224212.200.json
+<> 2021-01-11T224207.200.json
+<> 2021-01-11T223952.200.json
+<> 2021-01-11T223948.200.json
+<> 2021-01-11T223944.200.json
+<> 2021-01-11T223701.200.json
+
+
+###
+PATCH http://localhost:8080/users/{{id}}
+
+###
+GET http://localhost:8080/users/1
+
+<> 2021-01-12T015305.200.json
+<> 2021-01-12T015235.200.json
+<> 2021-01-12T012531.200.json
+
+
+###
+DELETE http://localhost:8080/users/1
+
+
+###
+PUT http://localhost:8080/users/1
+Content-Type: application/json
+
+{
+  "account": "test11@example.com",
+  "name": "백기동",
+  "addresses": [
+    {
+      "type": "Home",
+      "zipcode": "12342"
+    }
+  ]
+}
+
+<> 2021-01-12T015259.200.json
+<> 2021-01-11T224225.200.json
+<> 2021-01-11T224219.200.json
+<> 2021-01-11T224040.200.json
+<> 2021-01-11T224036.200.json
+<> 2021-01-11T224019.200.json
+<> 2021-01-11T224015.200.json
+<> 2021-01-11T224010.200.json
+<> 2021-01-11T224002.200.json
+<> 2021-01-11T223956.200.json
+<> 2021-01-11T223909.200.json
+<> 2021-01-11T223906.200.json
+<> 2021-01-11T223903.200.json
+<> 2021-01-11T223811.200.json
+<> 2021-01-11T223756.500.json
+<> 2021-01-11T223710.200.json
+<> 2021-01-11T222330.500.json
+<> 2021-01-11T222319.500.json
+<> 2021-01-11T222158.500.json
+<> 2021-01-08T181450.200.json
+<> 2021-01-07T012748.200.json
+<> 2021-01-07T012725.200.json
+
+###
+GET /users
+
+###
+POST http://localhost:8080/users
+
+###
+GET http://localhost:8080/users
+
+<> 2021-01-12T015349.405.json
+
+###
+GET /users
