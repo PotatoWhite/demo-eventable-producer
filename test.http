@@ -3,7 +3,7 @@ POST http://localhost:8080/users
 Content-Type: application/json
 
 {
-  "account": "test1@example.com",
+  "account": "test12@example.com",
   "name": "홍길동",
   "mobile": 1234,
   "addresses": [

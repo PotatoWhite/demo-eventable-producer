@@ -1,7 +1,7 @@
 package io.crcell.demo.entities;
 
-import io.crcell.demo.utils.JpaJsonConverter;
-import io.crcell.pramework.eventable.Eventable;
+import io.crcell.demo.utils.JsonConverter;
+import io.crcell.pramework.eventable.producer.Eventable;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -51,7 +51,7 @@ public class User implements Eventable<Long> {
   private String work;
 
 
-  @Convert(converter = JpaJsonConverter.class)
+  @Convert(converter = JsonConverter.class)
   private List<Address> addresses;
 
   @PrePersist

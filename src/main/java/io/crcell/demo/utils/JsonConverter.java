@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import javax.persistence.AttributeConverter;
 import java.io.IOException;
 
-public class JpaJsonConverter implements AttributeConverter<Object, String> {
+public class JsonConverter implements AttributeConverter<Object, String> {
   private static final ObjectMapper om = new ObjectMapper();
 
   @Override
